@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewNoteActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/AppBarLayoutViewNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/PrimaryVariant"
+        android:theme="@style/Theme.AppCompat.DayNight">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/ToolbarLayoutViewNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/PrimaryVariant"
+            android:theme="@style/Theme.AppCompat" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <EditText
+        android:id="@+id/editTextViewNote"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/AppBarLayoutViewNote"
+        android:background="@drawable/custom_notetext"
+        android:gravity="top"
+        android:hint="Take a note..."
+        android:padding="10dp"
+        tools:ignore="Autofill,HardcodedText,LabelFor,RtlHardcoded,TextFields" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fabUpdate"
+        android:layout_alignParentRight="true"
+        android:layout_marginHorizontal="16dp"
+        android:onClick="deleteNote"
+        android:src="@android:drawable/ic_menu_delete"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:onClick="updateNote"
+        android:src="@android:drawable/ic_menu_send"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/colorSplash" />
+    <item
+        android:drawable="@drawable/ic_takenotesplashlogo"
+        android:gravity="center">
+
+    </item>
+    <item
+        android:drawable="@drawable/ic_takenotesplashtext"
+        android:gravity="center"
+        android:top="120dp">
+
+    </item>
+</layer-list>

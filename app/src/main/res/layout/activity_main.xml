@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FeedActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/AppBarLayoutFeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/PrimaryVariant"
+        android:theme="@style/Theme.AppCompat.DayNight">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/ToolbarLayoutFeed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/PrimaryVariant"
+            android:theme="@style/Theme.AppCompat" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/AppBarLayoutFeed"
+        android:padding="0dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabDeleteAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fabAdd"
+        android:layout_alignParentRight="true"
+        android:layout_marginHorizontal="16dp"
+        android:onClick="deleteAllNote"
+        android:src="@android:drawable/ic_menu_delete"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:onClick="addNote"
+        android:src="@android:drawable/ic_input_add"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+</RelativeLayout>
