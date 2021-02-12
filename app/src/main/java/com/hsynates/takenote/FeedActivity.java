@@ -113,7 +113,15 @@ public class FeedActivity extends AppCompatActivity {
 
             while (cursor.moveToNext()) {
                 arrayListId.add(cursor.getInt(idIx));
-                arrayListNotes.add(cursor.getString(notesIx));
+                //arrayListNotes.add(cursor.getString(notesIx));
+
+                String notes = cursor.getString(notesIx);
+                int endIndex = 25;
+                if (notes.length() < endIndex) {
+                    arrayListNotes.add(notes);
+                } else {
+                    arrayListNotes.add(notes.substring(0, endIndex) + "...");
+                }
             }
             cursor.close();
             arrayAdapter.notifyDataSetChanged();
