@@ -29,6 +29,7 @@
         android:background="@drawable/custom_notetext"
         android:gravity="top"
         android:hint="Take a note..."
+        android:inputType="textCapSentences|textMultiLine"
         android:padding="10dp"
         tools:ignore="Autofill,HardcodedText,RtlHardcoded,TextFields" />
 
