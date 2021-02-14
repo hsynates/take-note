@@ -2,8 +2,8 @@
 <resources>
     <color name="purple_200">#FFBB86FC</color>
     <color name="Primary">#112d4e</color>
-    <color name="PrimaryVariant">#112d4e</color>
-    <color name="floating_background">#112d4e</color>
+    <color name="PrimaryVariant">#fff</color>
+    <color name="floating_background">#07689f</color>
     <color name="teal_700">#FF018786</color>
     <color name="floating_foreground">#ffffff</color>
     <color name="OnPrimary">#3f72af</color>

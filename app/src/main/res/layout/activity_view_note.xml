@@ -10,14 +10,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/PrimaryVariant"
-        android:theme="@style/Theme.AppCompat.DayNight">
+        android:theme="@style/Theme.AppCompat.Light">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/ToolbarLayoutViewNote"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/PrimaryVariant"
-            android:theme="@style/Theme.AppCompat" />
+            android:theme="@style/Theme.AppCompat.Light" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -39,6 +39,7 @@
         android:layout_above="@+id/fabUpdate"
         android:layout_alignParentRight="true"
         android:layout_marginHorizontal="16dp"
+        android:backgroundTint="@android:color/holo_red_dark"
         android:onClick="deleteNote"
         android:src="@android:drawable/ic_menu_delete"
         tools:ignore="ContentDescription,RtlHardcoded" />
@@ -51,7 +52,7 @@
         android:layout_alignParentBottom="true"
         android:layout_margin="16dp"
         android:onClick="updateNote"
-        android:src="@android:drawable/ic_menu_send"
+        android:src="@android:drawable/ic_input_add"
         tools:ignore="ContentDescription,RtlHardcoded" />
 
 </RelativeLayout>

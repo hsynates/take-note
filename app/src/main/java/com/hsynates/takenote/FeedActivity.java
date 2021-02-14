@@ -20,7 +20,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import java.util.ArrayList;
-import java.util.Objects;
 
 public class FeedActivity extends AppCompatActivity {
 
@@ -42,7 +41,8 @@ public class FeedActivity extends AppCompatActivity {
 
         toolbar = findViewById(R.id.ToolbarLayoutFeed);
         setSupportActionBar(toolbar);
-        Objects.requireNonNull(getSupportActionBar()).setTitle(R.string.app_name);
+        getSupportActionBar().setIcon(R.drawable.appbaricon);
+        getSupportActionBar().setTitle(R.string.app_name);
 
         listView = findViewById(R.id.listView);
         arrayListId = new ArrayList<>();
@@ -116,7 +116,7 @@ public class FeedActivity extends AppCompatActivity {
                 //arrayListNotes.add(cursor.getString(notesIx));
 
                 String notes = cursor.getString(notesIx);
-                int endIndex = 25;
+                int endIndex = 30;
                 if (notes.length() < endIndex) {
                     arrayListNotes.add(notes);
                 } else {

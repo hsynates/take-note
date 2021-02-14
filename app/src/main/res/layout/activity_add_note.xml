@@ -10,14 +10,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/PrimaryVariant"
-        android:theme="@style/Theme.AppCompat.DayNight">
+        android:theme="@style/Theme.AppCompat.Light">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/ToolbarLayoutAddNote"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/PrimaryVariant"
-            android:theme="@style/Theme.AppCompat" />
+            android:theme="@style/Theme.AppCompat.Light" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -41,7 +41,7 @@
         android:layout_alignParentBottom="true"
         android:layout_margin="16dp"
         android:onClick="saveNote"
-        android:src="@android:drawable/ic_menu_send"
+        android:src="@android:drawable/ic_input_add"
         tools:ignore="ContentDescription,RtlHardcoded" />
 
 </RelativeLayout>
