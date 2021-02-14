@@ -39,7 +39,7 @@
         android:layout_above="@+id/fabUpdate"
         android:layout_alignParentRight="true"
         android:layout_marginHorizontal="16dp"
-        android:backgroundTint="@android:color/holo_red_dark"
+        android:backgroundTint="@android:color/holo_red_light"
         android:onClick="deleteNote"
         android:src="@android:drawable/ic_menu_delete"
         tools:ignore="ContentDescription,RtlHardcoded" />
